@@ -54,7 +54,7 @@ transform = transforms.Compose([
 def hello():
     return "<p>Indonesian Food API!</p>"
 
-@app.route('/classify', methods=['POST'])
+@app.route('/', methods=['POST'])
 def classify():
     # Authentication
     headers = request.headers
